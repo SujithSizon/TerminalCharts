@@ -306,8 +306,10 @@ int main(int argc,char **argv)
 				}
 			ptr = buf;
 			n = sizeof buf;
-			timeout(1000);
+			timeout(20);
 			drw.bars |= chart_begin_end;
+			
+
 			}
 		if (!(drw.bars & chart_begin_end))
 		break;
@@ -318,6 +320,7 @@ int main(int argc,char **argv)
 		n -= len;
 		timeout(-1);
 		drw.bars &= ~chart_begin_end;
+		
 		}
 	if (fd_stdin != STDIN_FILENO) 
 		{
