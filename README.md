@@ -1,11 +1,11 @@
-# Terminal4Lyf
+1)Compile
 
-USAGE:
-
+```python
 gcc -o tcharts TerminalCharts.c -lncurses
+```python
+
 
 ./tcharts -s bar NIFTY
-
 ./tcharts -s japcandle NIFTY
 
 
