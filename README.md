@@ -1,5 +1,4 @@
 1)Compile
-
 ```python
 gcc -o tcharts TerminalCharts.c -lncurses
 ```
@@ -8,21 +7,18 @@ gcc -o tcharts TerminalCharts.c -lncurses
 [NSE Historical Index Data](https://www.nseindia.com/products/content/equities/indices/historical_index_data.htm)
 [NSE Historical Contract-wise](https://www.nseindia.com/products/content/derivatives/equities/historical_fo.htm )
 
-2)Run respective for Japaneese Candlestick, bar pattern.
-
+3)Run respective for Japaneese Candlestick / Bar pattern (replace "NIFTY" with file saved earlier).
 ```python
-./tcharts -s bar NIFTY
-./tcharts -s japcandle NIFTY
+./offline -s candle NIFTY
+./offline -s bar NIFTY
 ```
 
-Opt)Create live market data
-
+4)Create live market data (use "rand" file created now in above code).
 ```python
 gcc -o randt randt.c -lpthread
 ```
 
-Opt)Run live market data (under progress)
-
+5)Run live market data (under progress)
 ```python
-./live
+./live.sh
 ```
