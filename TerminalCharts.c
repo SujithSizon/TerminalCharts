@@ -225,7 +225,7 @@ int main(int argc,char **argv)
 	noecho();
 	autoscalewindow();
 	int input = getopt_long(argc, argv, "s:", 0, 0);
-	if (!strcmp(optarg, "japcandle")) 
+	if (!strcmp(optarg, "candle")) 
 		{bar_arr[0x0] = '0';
 		bar_arr[0x1] = '1';
 		bar_arr[0x2] = '2';
@@ -339,5 +339,3 @@ int main(int argc,char **argv)
 	endwin();
 	return 0;
 	}
-
-
